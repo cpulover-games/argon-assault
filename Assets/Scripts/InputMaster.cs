@@ -29,7 +29,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
             ],
             ""bindings"": [
                 {
-                    ""name"": ""awsd"",
+                    ""name"": ""AWSD Keyboard"",
                     ""id"": ""42c2e0a3-e24e-46f3-9227-ef2483d547a3"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
@@ -76,6 +76,61 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""name"": ""right"",
                     ""id"": ""35575de2-0ba6-41e7-858c-652c96218e73"",
                     ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Arrow Keyboard"",
+                    ""id"": ""b503acdb-7746-42b5-9611-f5244c355f6a"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""3cb752af-cbf8-49c7-9788-60d0ac4fecdd"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""bb1135be-d2cd-4ba5-8bec-5569d29029b7"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""47d08633-0151-4f3b-bd38-3185011ed341"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""0397e90d-2452-4525-a3c9-562bc7cac0f3"",
+                    ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
