@@ -12,12 +12,12 @@ public class Player : MonoBehaviour
     [SerializeField] private float xSpeed = 25f;
     [SerializeField] private float ySpeed = 25f;
 
-    private const float X_MIN_POSITION = -15f;
-    private const float X_MAX_POSITION = 15f;
-    private const float Y_MIN_POSITION = -13f;
-    private const float Y_MAX_POSITION = 13f;
-    private const float X_MIN_ROTATION = -50f; 
-    private const float X_MAX_ROTATION = -10f; 
+    private const float X_MIN_POSITION = -21.5f;
+    private const float X_MAX_POSITION = 21.5f;
+    private const float Y_MIN_POSITION = -12f;
+    private const float Y_MAX_POSITION = 14f;
+    private const float X_MIN_ROTATION = -45f; 
+    private const float X_MAX_ROTATION = 0f; 
     private const float Y_MIN_ROTATION = -25f; 
     private const float Y_MAX_ROTATION = 25f; 
 
