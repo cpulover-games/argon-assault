@@ -525,6 +525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xSpeed: 25
+  ySpeed: 25
 --- !u!1 &864094124
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,7 +804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4112097546394478, guid: 9aeb31f3dfa2d3f41af8ea1b97d4a12c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.04
+      value: -11.81
       objectReference: {fileID: 0}
     - target: {fileID: 4112097546394478, guid: 9aeb31f3dfa2d3f41af8ea1b97d4a12c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -811,19 +812,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4112097546394478, guid: 9aeb31f3dfa2d3f41af8ea1b97d4a12c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99669635
+      value: 0.996981
       objectReference: {fileID: 0}
     - target: {fileID: 4112097546394478, guid: 9aeb31f3dfa2d3f41af8ea1b97d4a12c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.07707291
+      value: 0.07701931
       objectReference: {fileID: 0}
     - target: {fileID: 4112097546394478, guid: 9aeb31f3dfa2d3f41af8ea1b97d4a12c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.02548213
+      value: 0.009040516
       objectReference: {fileID: 0}
     - target: {fileID: 4112097546394478, guid: 9aeb31f3dfa2d3f41af8ea1b97d4a12c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0026149359
+      value: 0.0038857162
       objectReference: {fileID: 0}
     - target: {fileID: 4112097546394478, guid: 9aeb31f3dfa2d3f41af8ea1b97d4a12c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -831,7 +832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4112097546394478, guid: 9aeb31f3dfa2d3f41af8ea1b97d4a12c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 2.97
+      value: 1.08
       objectReference: {fileID: 0}
     - target: {fileID: 4112097546394478, guid: 9aeb31f3dfa2d3f41af8ea1b97d4a12c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z

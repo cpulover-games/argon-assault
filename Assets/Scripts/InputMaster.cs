@@ -21,7 +21,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 {
                     ""name"": ""Move"",
                     ""type"": ""PassThrough"",
-                    ""id"": ""3f996d79-14fd-4882-84a1-bada8d8a4b83"",
+                    ""id"": ""4fe444d3-7d85-4cf0-9ed0-de829bb471da"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -29,9 +29,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
             ],
             ""bindings"": [
                 {
-                    ""name"": ""Horizontal"",
-                    ""id"": ""902029c3-8b43-4207-8ffd-3ac80361b5f0"",
-                    ""path"": ""1DAxis"",
+                    ""name"": ""awsd"",
+                    ""id"": ""42c2e0a3-e24e-46f3-9227-ef2483d547a3"",
+                    ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -40,8 +40,30 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""negative"",
-                    ""id"": ""a466a8bd-f33b-4971-a44b-173415cd4adf"",
+                    ""name"": ""up"",
+                    ""id"": ""fff91442-435b-466c-a80f-3accf9763f6a"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""9746cfdb-dc9c-4dbf-9077-489cad44c250"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""68fe4072-a134-47b5-9ba4-c89b047aae27"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -51,8 +73,8 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""positive"",
-                    ""id"": ""52c6c240-a3b2-4538-919f-faf7909d4002"",
+                    ""name"": ""right"",
+                    ""id"": ""35575de2-0ba6-41e7-858c-652c96218e73"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -60,17 +82,6 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""62bb0afc-606c-4e28-b549-89a68c977bb6"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": ""Hold"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 }
             ]
         }
