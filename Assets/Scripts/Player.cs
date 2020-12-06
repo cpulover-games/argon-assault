@@ -10,11 +10,16 @@ public class Player : MonoBehaviour
     private InputMaster controls;
 
     [SerializeField] private float xSpeed = 25f;
-    private const float X_BOUNDARY = 11.5f;
-
     [SerializeField] private float ySpeed = 25f;
-    private const float Y_BOUNDARY = 11.5f;
 
+    private const float X_MIN_POSITION = -15f;
+    private const float X_MAX_POSITION = 15f;
+    private const float Y_MIN_POSITION = -13f;
+    private const float Y_MAX_POSITION = 13f;
+    private const float X_MIN_ROTATION = -50f; 
+    private const float X_MAX_ROTATION = -10f; 
+    private const float Y_MIN_ROTATION = -25f; 
+    private const float Y_MAX_ROTATION = 25f; 
 
     private void Awake()
     {
@@ -51,15 +56,36 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ProcessPositioning();
+        ProcessRotating();
+    }
+
+    private float MapInterval(float val, float srcFrom, float srcTo, float dstFrom, float dstTo)
+    {
+        return dstFrom + (val - srcFrom) / (srcTo - srcFrom) * (dstTo - dstFrom);
+    }
+
+    private void ProcessRotating()
+    {
+        // x rotation increases when y position decreases
+        float nextXRotation = MapInterval(transform.localPosition.y, Y_MAX_POSITION, Y_MIN_POSITION, X_MIN_ROTATION, X_MAX_ROTATION);
+        // y rotation increases when x position increases
+        float nextYRotation = MapInterval(transform.localPosition.x, X_MIN_POSITION, X_MAX_POSITION, Y_MIN_ROTATION, Y_MAX_ROTATION);
+
+        transform.localRotation = Quaternion.Euler(nextXRotation, nextYRotation, 0);
+    }
+
+    private void ProcessPositioning()
+    {
         Vector2 moveInput = controls.Player.Move.ReadValue<Vector2>();
 
-        float nextX = transform.localPosition.x + moveInput.x * xSpeed * Time.deltaTime;
-        nextX = Mathf.Clamp(nextX, -X_BOUNDARY, X_BOUNDARY);
+        float nextXPosition = transform.localPosition.x + moveInput.x * xSpeed * Time.deltaTime;
+        nextXPosition = Mathf.Clamp(nextXPosition, X_MIN_POSITION, X_MAX_POSITION);
 
-        float nextY = transform.localPosition.y + moveInput.y * ySpeed * Time.deltaTime;
-        nextY = Mathf.Clamp(nextY, -Y_BOUNDARY, Y_BOUNDARY);
+        float nextYPosition = transform.localPosition.y + moveInput.y * ySpeed * Time.deltaTime;
+        nextYPosition = Mathf.Clamp(nextYPosition, Y_MIN_POSITION, Y_MAX_POSITION);
 
-        transform.localPosition = new Vector3(nextX, nextY, transform.localPosition.z);
+        transform.localPosition = new Vector3(nextXPosition, nextYPosition, transform.localPosition.z);
     }
 }
 
