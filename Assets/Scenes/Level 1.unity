@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -339,6 +339,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 1.3610001
       objectReference: {fileID: 0}
+    - target: {fileID: 6530462681040883939, guid: 212abb2fed7545c43b918738061ceece,
+        type: 3}
+      propertyPath: explosionFX
+      value: 
+      objectReference: {fileID: 6719090824714551585, guid: f41c76eddba7ce64696e3658bfba86ee,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 212abb2fed7545c43b918738061ceece, type: 3}
 --- !u!4 &319014740 stripped
@@ -632,6 +638,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ship_05 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6385871642300649179, guid: d213ab7ca201fc046ab11dee663d1e63,
+        type: 3}
+      propertyPath: explosionFX
+      value: 
+      objectReference: {fileID: 6719090824714551585, guid: f41c76eddba7ce64696e3658bfba86ee,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d213ab7ca201fc046ab11dee663d1e63, type: 3}
 --- !u!4 &1368401832 stripped
@@ -707,6 +719,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ship_05 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6385871642300649179, guid: d213ab7ca201fc046ab11dee663d1e63,
+        type: 3}
+      propertyPath: explosionFX
+      value: 
+      objectReference: {fileID: 6719090824714551585, guid: f41c76eddba7ce64696e3658bfba86ee,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d213ab7ca201fc046ab11dee663d1e63, type: 3}
 --- !u!4 &1585212562 stripped
@@ -782,6 +800,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ship_05 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6385871642300649179, guid: d213ab7ca201fc046ab11dee663d1e63,
+        type: 3}
+      propertyPath: explosionFX
+      value: 
+      objectReference: {fileID: 6719090824714551585, guid: f41c76eddba7ce64696e3658bfba86ee,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d213ab7ca201fc046ab11dee663d1e63, type: 3}
 --- !u!4 &1998133826 stripped

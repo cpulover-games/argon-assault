@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] GameObject explosionFX;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,8 @@ public class Enemy : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
+        GameObject explosion = Instantiate(explosionFX, transform.position, Quaternion.identity);
+        Destroy(explosion, 3f);
         Destroy(gameObject);
     }
 }
