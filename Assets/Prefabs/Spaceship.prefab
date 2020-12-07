@@ -2010,7 +2010,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5838521653806935210}
-  - component: {fileID: 5838920681995355949}
+  - component: {fileID: 473434085245986747}
   m_Layer: 0
   m_Name: Spaceship
   m_TagString: Untagged
@@ -2055,7 +2055,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -23.64, z: 0}
---- !u!114 &5838920681995355949
+--- !u!114 &473434085245986747
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2067,8 +2067,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81e8fe8bc51fb0d44877e2e69f78a186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xSpeed: 30
-  ySpeed: 30
+  xSpeed: 25
+  ySpeed: 25
 --- !u!1 &5840582788005617772
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8980034872109178559}
   - component: {fileID: 8999667772021256067}
   - component: {fileID: 8989807845079548401}
+  - component: {fileID: 172029644}
   m_Layer: 0
   m_Name: Ship_04
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8977185027587029049}
-  m_LocalRotation: {x: 0.7201415, y: 0.16964062, z: -0.18922445, w: 0.64561015}
+  m_LocalRotation: {x: 0.7201409, y: 0.16963826, z: -0.18922102, w: 0.6456125}
   m_LocalPosition: {x: 394.8369, y: 50.109604, z: -94.373795}
   m_LocalScale: {x: 70, y: 100, z: 100}
   m_Children: []
@@ -79,3 +80,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &172029644
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8977185027587029049}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300004, guid: ec2ed6fafcc53c64ba923b9ef7d5749f, type: 3}
