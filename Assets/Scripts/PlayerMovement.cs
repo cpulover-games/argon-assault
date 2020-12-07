@@ -87,5 +87,10 @@ public class PlayerMovement : MonoBehaviour
 
         transform.localPosition = new Vector3(nextXPosition, nextYPosition, transform.localPosition.z);
     }
+
+    private void OnPlayerCollided() //called by string reference
+    {
+        controls.Disable();
+    }
 }
 
