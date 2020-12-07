@@ -5,10 +5,13 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject explosionFX;
+    [SerializeField] int scorePerHit;
+    ScoreLabel scoreLabel;
     // Start is called before the first frame update
     void Start()
     {
         SetupCollider();
+        scoreLabel = FindObjectOfType<ScoreLabel>();
     }
 
     private void SetupCollider()
@@ -38,6 +41,7 @@ public class Enemy : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
+        scoreLabel.ScoreHit(scorePerHit);
         GameObject explosion = Instantiate(explosionFX, transform.position, Quaternion.identity);
         Destroy(explosion, 3f);
         Destroy(gameObject);
