@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 //using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     private InputMaster controls;
 
