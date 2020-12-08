@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     private const float Y_MIN_POSITION = -12f;
     private const float Y_MAX_POSITION = 14f;
     private const float X_MIN_ROTATION = -45f; 
-    private const float X_MAX_ROTATION = 0f; 
+    private const float X_MAX_ROTATION = -15f; 
     private const float Y_MIN_ROTATION = -25f; 
     private const float Y_MAX_ROTATION = 25f; 
 
