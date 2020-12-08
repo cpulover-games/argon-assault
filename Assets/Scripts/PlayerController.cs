@@ -93,11 +93,9 @@ public class PlayerController : MonoBehaviour
         if (shootInput == 1)
         {
             isShooting = true;
-            print("Shooting");
         } else
         {
             isShooting = false;
-            print("Not shooting");
         }
 
         foreach (GameObject gun in guns)
