@@ -24,7 +24,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""id"": ""4fe444d3-7d85-4cf0-9ed0-de829bb471da"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""MultiTap,Hold""
                 },
                 {
                     ""name"": ""Shoot"",

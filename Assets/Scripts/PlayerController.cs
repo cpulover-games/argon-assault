@@ -25,18 +25,15 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         controls = new InputMaster();
-        //controls.Player.Move.performed += Move;
+        //controls.Player.Move.performed += ProcessPositioning;
+        controls.Player.Shoot.performed += ProcessShooting;
+        controls.Player.Shoot.canceled += ProcessShooting;
     }
 
     private void OnDestroy()
     {
         controls.Dispose();
         //controls.Player.Movement.performed -= context => Move(context.ReadValue<float>()); //neccessary?
-    }
-
-    private void Move(InputAction.CallbackContext context)
-    {
-        print("Player moving " + context.ReadValue<float>());
     }
 
     private void OnEnable()
@@ -59,7 +56,6 @@ public class PlayerController : MonoBehaviour
     {
         ProcessPositioning();
         ProcessRotating();
-        ProcessShooting();
     }
 
     private float MapInterval(float val, float srcFrom, float srcTo, float dstFrom, float dstTo)
@@ -90,19 +86,21 @@ public class PlayerController : MonoBehaviour
         transform.localPosition = new Vector3(nextXPosition, nextYPosition, transform.localPosition.z);
     }
 
-    private void ProcessShooting()
+    private void ProcessShooting(InputAction.CallbackContext context)
     {
         bool isShooting;
-        float shootInput = controls.Player.Shoot.ReadValue<float>();
+        float shootInput = context.ReadValue<float>();
         if (shootInput == 1)
         {
             isShooting = true;
+            print("Shooting");
         } else
         {
             isShooting = false;
+            print("Not shooting");
         }
 
-        foreach(GameObject gun in guns)
+        foreach (GameObject gun in guns)
         {
             gun.SetActive(isShooting);
         }
