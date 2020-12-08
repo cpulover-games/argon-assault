@@ -5,10 +5,11 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 //using UnityStandardAssets.CrossPlatformInput;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     private InputMaster controls;
 
+    [SerializeField] private GameObject[] guns;
     [SerializeField] private float xSpeed = 25f;
     [SerializeField] private float ySpeed = 25f;
 
@@ -58,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
     {
         ProcessPositioning();
         ProcessRotating();
+        ProcessShooting();
     }
 
     private float MapInterval(float val, float srcFrom, float srcTo, float dstFrom, float dstTo)
@@ -86,6 +88,24 @@ public class PlayerMovement : MonoBehaviour
         nextYPosition = Mathf.Clamp(nextYPosition, Y_MIN_POSITION, Y_MAX_POSITION);
 
         transform.localPosition = new Vector3(nextXPosition, nextYPosition, transform.localPosition.z);
+    }
+
+    private void ProcessShooting()
+    {
+        bool isShooting;
+        float shootInput = controls.Player.Shoot.ReadValue<float>();
+        if (shootInput == 1)
+        {
+            isShooting = true;
+        } else
+        {
+            isShooting = false;
+        }
+
+        foreach(GameObject gun in guns)
+        {
+            gun.SetActive(isShooting);
+        }
     }
 
     private void OnPlayerCollided() //called by string reference

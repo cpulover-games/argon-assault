@@ -2692,6 +2692,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81e8fe8bc51fb0d44877e2e69f78a186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  guns:
+  - {fileID: 5838920682949450520}
   xSpeed: 25
   ySpeed: 25
 --- !u!1 &5840582788005617772
@@ -3710,15 +3712,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f41c76eddba7ce64696e3658bfba86ee, type: 3}
---- !u!1 &5838920682060179801 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6719090824714551585, guid: f41c76eddba7ce64696e3658bfba86ee,
-    type: 3}
-  m_PrefabInstance: {fileID: 880175472750782584}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5838920682060179800 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6719090824714551584, guid: f41c76eddba7ce64696e3658bfba86ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 880175472750782584}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5838920682060179801 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6719090824714551585, guid: f41c76eddba7ce64696e3658bfba86ee,
     type: 3}
   m_PrefabInstance: {fileID: 880175472750782584}
   m_PrefabAsset: {fileID: 0}
@@ -3794,6 +3796,12 @@ PrefabInstance:
 --- !u!4 &5838920682949450523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8688571367625217837, guid: 6148808d11b0b1446b081cd4a783dd18,
+    type: 3}
+  m_PrefabInstance: {fileID: 2998274695394774070}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5838920682949450520 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8688571367625217838, guid: 6148808d11b0b1446b081cd4a783dd18,
     type: 3}
   m_PrefabInstance: {fileID: 2998274695394774070}
   m_PrefabAsset: {fileID: 0}
