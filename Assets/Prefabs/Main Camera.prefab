@@ -221,11 +221,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5838920682949450525, guid: 5a84420e10ed8a749b239d96babc5ced,
         type: 3}
-      propertyPath: CollisionModule.m_Bounce.scalar
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5838920682949450525, guid: 5a84420e10ed8a749b239d96babc5ced,
-        type: 3}
       propertyPath: CollisionModule.collisionMessages
       value: 1
       objectReference: {fileID: 0}
