@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 857098171227195722}
   - component: {fileID: 6385871642300649179}
   m_Layer: 0
-  m_Name: Ship_05
+  m_Name: Creep 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,11 +28,11 @@ Transform:
   m_GameObject: {fileID: 844290620389844654}
   m_LocalRotation: {x: 0, y: -0.82847106, z: 0, w: 0.5600319}
   m_LocalPosition: {x: 309.3369, y: -9.090393, z: 362.9262}
-  m_LocalScale: {x: 28, y: 28, z: 28}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -111.884, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0.000006516304, z: 0}
 --- !u!33 &848420410382903154
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -94,5 +94,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionFX: {fileID: 6719090824714551585, guid: f41c76eddba7ce64696e3658bfba86ee,
     type: 3}
-  health: 5
-  scoreOnDestroy: 10
+  health: 2
+  scoreOnDestroy: 1
