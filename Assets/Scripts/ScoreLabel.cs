@@ -13,7 +13,7 @@ public class ScoreLabel : MonoBehaviour
         textComponent = GetComponent<Text>();
         textComponent.text = score.ToString();
     }
-    public void ScoreHit(int enemyScore)
+    public void UpdateOnEnemyDestroyed(int enemyScore)
     {
         score += enemyScore;
         textComponent.text = score.ToString();

@@ -5,7 +5,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject explosionFX;
-    [SerializeField] int scorePerHit;
+    [SerializeField] int health = 2;
+    [SerializeField] int scoreOnDestroy;
     ScoreLabel scoreLabel;
     // Start is called before the first frame update
     void Start()
@@ -41,7 +42,15 @@ public class Enemy : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        scoreLabel.ScoreHit(scorePerHit);
+        if (--health <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        scoreLabel.UpdateOnEnemyDestroyed(scoreOnDestroy);
         GameObject explosion = Instantiate(explosionFX, transform.position, Quaternion.identity);
         Destroy(explosion, 3f);
         Destroy(gameObject);

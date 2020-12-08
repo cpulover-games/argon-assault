@@ -94,4 +94,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionFX: {fileID: 6719090824714551585, guid: f41c76eddba7ce64696e3658bfba86ee,
     type: 3}
-  scorePerHit: 100
+  health: 20
+  scoreOnDestroy: 100
