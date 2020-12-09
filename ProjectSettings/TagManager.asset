@@ -4,12 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - PW - Prop
-  - PW - Building
-  - Synty Tree
-  - Synty Medium Farm
-  - Synty Small Farm
-  - PW - Nature
+  - Shootable
   layers:
   - Default
   - TransparentFX
@@ -19,10 +14,10 @@ TagManager:
   - UI
   - 
   - 
-  - PW_VFX
-  - PW_Object_Small
-  - PW_Object_Medium
-  - PW_Object_Large
+  - Lighting
+  - Ground
+  - Postprocessing
+  - 
   - 
   - 
   - 
@@ -44,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Fire
+    uniqueID: 3804908061
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

@@ -52,7 +52,7 @@ public class Enemy : MonoBehaviour
     {
         scoreLabel.UpdateOnEnemyDestroyed(scoreOnDestroy);
         GameObject explosion = Instantiate(explosionFX, transform.position, Quaternion.identity);
-        Destroy(explosion, 3f);
+        Destroy(explosion, 1.5f);
         Destroy(gameObject);
     }
 }
