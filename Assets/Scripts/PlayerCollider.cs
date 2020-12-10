@@ -28,6 +28,6 @@ public class PlayerCollider : MonoBehaviour
 
     private void RestartLevel()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

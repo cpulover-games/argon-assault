@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_multiSceneLightingSupport: 1
   m_updateInRealtime: 1
-  m_selectedLightingProfileValuesIndex: 1
+  m_selectedLightingProfileValuesIndex: -99
   m_renamingProfile: 0
   m_editSettings: 1
   m_lightingBakeMode: 1
@@ -595,7 +595,8 @@ MonoBehaviour:
     m_postProcessExposure: 1
     m_postProcessingProfileGUIDBuiltIn: f0d3288284853394ea58e38e5dd7f195
     m_directToCamera: 0
-    m_postProcessProfileURP: {fileID: 0}
+    m_postProcessProfileURP: {fileID: 11400000, guid: 04ac2e73977d2264ca4cf6fffa78d9d7,
+      type: 2}
     m_postProcessingProfileGUIDURP: 04ac2e73977d2264ca4cf6fffa78d9d7
     m_postProcessingProfileGUIDHDRP: 7401b5c0a355a504e85f0c764c896a8a
     m_environmentProfileGUIDHDRP: f01c038506575164b97aee2752cf628e
