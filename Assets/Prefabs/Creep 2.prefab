@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4724125590263416399}
   m_LocalRotation: {x: 0.59534746, y: 0.046592772, z: -0.030319557, w: 0.8015431}
   m_LocalPosition: {x: 16.736921, y: -6.890396, z: 113.12619}
-  m_LocalScale: {x: 22, y: 22, z: 22}
+  m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -94,5 +94,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionFX: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
     type: 3}
-  health: 2
-  scoreOnDestroy: 1
+  health: 5
+  scoreOnDestroy: 20
