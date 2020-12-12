@@ -87,16 +87,16 @@ Material:
     - _Metallic: 0.2
     - _NormalFadeDistance: 300
     - _NormalFadeStart: 50
-    - _NormalLayer0: 0.4
+    - _NormalLayer0: 0.5
     - _NormalLayer0Scale: 0.4
-    - _NormalLayer1: 0.6
+    - _NormalLayer1: 0.7
     - _NormalLayer1Scale: 0.6
     - _NormalLayer2Scale: 0.4
     - _NormalMoveScale: 0.0003
     - _NormalMoveSpeed: 0.01
     - _NormalTile: 512
     - _PW_DstBlend: 0
-    - _PW_MainLightIntensity: 4.3
+    - _PW_MainLightIntensity: 2.8
     - _PW_SSS: 1
     - _PW_SSSDistortion: 0.34
     - _PW_SSSPower: 1
@@ -128,7 +128,7 @@ Material:
     - _AmbientColor: {r: 0.7027151, g: 0.88101596, b: 1.0016313, a: 1}
     - _Color: {r: 1, g: 0, b: 0, a: 0}
     - _ColorDeepWater: {r: 1, g: 1, b: 1, a: 1}
-    - _EdgeWaterColor: {r: 0.09999991, g: 0.09999991, b: 0.1999999, a: 1}
+    - _EdgeWaterColor: {r: 0.09999994, g: 0.09999994, b: 0.19999993, a: 1}
     - _MainLightColor: {r: 1.4, g: 1.1586648, b: 0.9971636, a: 1.4}
     - _MainLightDir: {r: -0, g: 0.70710677, b: 0.7071067, a: 0}
     - _MainLightFresnel: {r: 0.052643288, g: 0.0726428, b: 0.122641504, a: 1}
