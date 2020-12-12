@@ -31,7 +31,6 @@ public class Gun : MonoBehaviour
         while (i < numCollisionEvents)
         {
             Vector3 collisionPosition = collisionEvents[i].intersection;
-            print(collisionPosition);
             GameObject explosion = Instantiate(collisionFX, collisionPosition, Quaternion.identity);
             Destroy(explosion, 1.5f);
             i++;
