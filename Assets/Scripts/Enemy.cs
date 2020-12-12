@@ -5,9 +5,13 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject explosionFX;
+    [SerializeField] GameObject damageFX;
     [SerializeField] int health = 2;
     [SerializeField] int scoreOnDestroy;
     ScoreLabel scoreLabel;
+
+  
+
     // Start is called before the first frame update
     void Start()
     {
