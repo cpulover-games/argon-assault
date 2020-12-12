@@ -92,7 +92,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56920ecab90dcec41a900052380c3022, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionFX: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+  explosionFX: {fileID: 6719090824714551585, guid: f41c76eddba7ce64696e3658bfba86ee,
     type: 3}
+  damageFX: {fileID: 0}
   health: 100
   scoreOnDestroy: 100

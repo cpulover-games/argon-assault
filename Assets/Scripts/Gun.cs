@@ -32,7 +32,7 @@ public class Gun : MonoBehaviour
         {
             Vector3 collisionPosition = collisionEvents[i].intersection;
             GameObject explosion = Instantiate(collisionFX, collisionPosition, Quaternion.identity);
-            Destroy(explosion, 1.5f);
+            Destroy(explosion, 0.5f);
             i++;
         }
 
